@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .alert{
+            color: aqua;
+            background-color: green;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading"></h1>
+    <p>Hello</p>
+    <p>How are you</p>
+    <script>
+        let div = document.createElement('div');
+        div.id="paragraph"
+        div.className="alert"
+        div.innerHTML = "<p> Congrats ! you have created a div.</p>";
+        document.body.append(div);
+        let heading = document.getElementById("heading");
+        heading.innerHTML='&#128512';
+    </script>
+    
+</body>
+</html>
