@@ -38,5 +38,25 @@
         <a href="gallery.html">Gallery</a>
         <a href="contectus.html">Conectus</a>
     </div>
+    <section>
+      <img class="mySlides" src="pic1.jpg" style="height: 500px;">
+      <img class="mySlides" src="pic3.avif" style="height: 500px;">
+    </section>
+    <script>
+      var myindex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++ ) {
+          x[i].style.display = "none";
+        }
+        myindex++;
+        if (myindex > x.length ) {myindex = 1 }
+        x[myindex-1].style.display = "block";
+        setTimeout(carousel,3000);
+      }
+    </script>
 </body>
 </html>
