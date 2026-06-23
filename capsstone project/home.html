@@ -13,30 +13,32 @@
         <a href="aboutus.html">Aboutus</a>
         <a href="gallery.html">Gallery</a>
         <a href="contectus.html">Conectus</a>
-    </div>
+    </div><br>
+    <span class="broder trans" style="font-size: 40px;">
+<center>Welcome all to the website</center>
+    </span><br>
     <section>
-      <img class="mySlides" src="pic1.jpg" style="height: 500px;">
-      <img class="mySlides" src="pic3.avif" style="height: 500px;">
+      <h2>Chinese cuisine</h2>
+      <p>Chinese cuisine is one of the world's oldest, richest, and most diverse culinary traditions. It is deeply rooted in
+      balance, famously utilizing the concept of Yin and Yang to harmonize flavors, textures, and nutrition. The cuisine is
+      broadly categorized into the "Eight Great Traditions," which showcase unique regional styles. For instance, Sichuan
+      dishes are famous for their fiery, tongue-numbing peppercorns and bold chili heat. In contrast, Cantonese cuisine
+      focuses on mild, fresh flavors, highlighting natural ingredients through steaming and stir-frying. Staples vary
+      geographically, with rice dominating the humid south and wheat-based noodles or buns leading the colder north. Cooking
+      methods are highly sophisticated, relying on precise techniques like wok-tossing, braising, and deep-frying.
+      Presentation is vital, as dishes must appeal equally to the eyes, nose, and palate. Ultimately, Chinese food is centered
+      around community, traditionally served family-style to encourage sharing and connection.</p>
+    </section>
+    <section>
+      <img class="mySlides" src="chi 1.jpg" style="height: 500px;">
+      <img class="mySlides" src="chi.jpg" style="height: 500px;">
     </section>
     <div class="footer">
       <p>copy all right and reserverd by Muhammad Hadi Ali Khan</p>
     </div>
-    <script>
-      var myindex = 0;
-      carousel();
+  <script src="script.js"></script>
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++ ) {
-          x[i].style.display = "none";
-        }
-        myindex++;
-        if (myindex > x.length ) {myindex = 1 }
-        x[myindex-1].style.display = "block";
-        setTimeout(carousel,3000);
-      }
-    </script>
+    
 
 
 </body>
